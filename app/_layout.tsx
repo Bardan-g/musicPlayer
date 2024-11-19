@@ -1,9 +1,12 @@
 import { Stack } from "expo-router";
-function RootLayout(){
-  <Stack>
-    <Stack.Screen name="index" options={{title: "Home"}}/>
- </Stack>
+import "../global.css"
 
+function RootLayout(){
+   return (
+    <Stack>
+        <Stack.Screen name="index" options={{headerShown:false}}/>
+    </Stack>
+   );
 }
 
 export default RootLayout;
