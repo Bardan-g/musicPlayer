@@ -4,7 +4,7 @@ import {
   SafeAreaView,
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
-import RecommendedWithIcon from "@/components/RecommendedWithIcon";
+import RecommendedWithIcon from "@/components/TextWithRightIcon";
 
 function HomeScreen() {
   const { top } = useSafeAreaInsets();
@@ -25,6 +25,8 @@ function HomeScreen() {
           <RecommendedWithIcon text={"Recommended For You"} />
         </View>
       </View>
+
+      {/*  */}
 
       <StatusBar backgroundColor="#61dafb" />
     </SafeAreaView>
